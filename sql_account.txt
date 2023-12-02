@@ -1,0 +1,13 @@
+use Volunteer
+
+CREATE TABLE Accounts (
+   UserID INT IDENTITY(1,1) not null PRIMARY KEY,
+    username VARCHAR(255) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    name VARCHAR(255),
+    phone VARCHAR(20),
+    address TEXT,
+    [status] [int] NULL,
+	[role] [int] NULL,
+    token VARCHAR(255)
+);
